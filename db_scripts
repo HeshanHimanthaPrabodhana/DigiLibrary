@@ -1,0 +1,9 @@
+CREATE TABLE IF NOT EXISTS `members` (
+  `id` int(11) unsigned NOT NULL AUTO_INCREMENT,
+  `name` varchar(255) NOT NULL,
+  `contact_no` varchar(255) NOT NULL,
+  `index_no` varchar(255) NOT NULL,
+  `payment_slip_url` varchar(255) DEFAULT NULL,
+  PRIMARY KEY (`id`),
+  UNIQUE KEY `index_no` (`index_no`)
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=12 ;
